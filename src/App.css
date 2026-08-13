@@ -1,1 +1,13 @@
- 
+ .home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure hero and brands sit flush against each other, no gap */
+.home-page .hero {
+  margin-bottom: 0;
+}
+
+.home-page .brands-bar {
+  margin-top: 0;
+}

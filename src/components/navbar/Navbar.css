@@ -5,12 +5,15 @@
 }
 
 .header-wrapper {
+  z-index: 999;
+
   font-family: "Segoe UI", Arial, sans-serif;
   background: #fff;
 }
 
 /* Announcement bar */
 .announcement-bar {
+  
   position: relative;
   background: #000;
   color: #fff;

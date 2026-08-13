@@ -1,8 +1,6 @@
 import React from "react";
-import "./hero.css";
-
-// Replace this with your own image path, e.g. import heroImage from "../../assets/hero-models.png";
-const heroImage = "/assets/hero-models.png";
+import "../hero.css";
+import heroImage from "../../assets/images/hero-image.jpg"; // Adjust path as needed
 
 export default function Hero() {
   return (
@@ -41,7 +39,11 @@ export default function Hero() {
       </div>
 
       <div className="hero-image-wrapper">
-        <img src={heroImage} alt="Models wearing stylish outfits" className="hero-image" />
+        <img
+          src={heroImage}
+          alt="Models wearing stylish outfits"
+          className="hero-image"
+        />
         <svg className="star star-top" viewBox="0 0 24 24" fill="#000">
           <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" />
         </svg>
