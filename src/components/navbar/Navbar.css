@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  position: relative;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 13px;
+}
+
+.announcement-bar p {
+  display: inline;
+}
+
+.announcement-bar a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  opacity: 0.7;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  border-bottom: 1px solid #000;
+  gap: 24px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.nav-links li:hover {
+  color: #555;
+}
+
+.caret {
+  font-size: 11px;
+  margin-top: 1px;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 60px;
+  padding: 12px 20px;
+  gap: 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 100%;
+  color: #333;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-icon {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.icons svg {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-links,
+  .search-bar {
+    display: none;
+  }
+  .navbar {
+    padding: 16px 20px;
+  }
+  .announcement-bar {
+    padding: 10px 50px;
+    font-size: 12px;
+  }
+}
