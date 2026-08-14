@@ -8,7 +8,7 @@ const products = [
     image: "/assets/images/product-tshirt-black.jpg",
     rating: 4.5,
     price: 120,
-    oldPrice: null,
+    oldPrice: null, 
     discount: null,
   },
   {
