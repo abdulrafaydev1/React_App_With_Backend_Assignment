@@ -106,6 +106,10 @@ function StarRating({ rating }) {
   );
 }
 
+
+
+
+
 export default function NewArrivals() {
   const [showAll, setShowAll] = useState(false);
 
