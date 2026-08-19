@@ -105,11 +105,6 @@ function StarRating({ rating }) {
     </div>
   );
 }
-
-
-
-
-
 export default function NewArrivals() {
   const [showAll, setShowAll] = useState(false);
 
